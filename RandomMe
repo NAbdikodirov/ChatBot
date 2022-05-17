@@ -1,0 +1,17 @@
+//Simple Example for Random in Java
+
+import java.util.Random;
+public class Solution{
+  public static void main{
+    Random random = new Random();
+    
+    int x = random.nextInt(100);
+    System.out.println(x);
+    
+    double y = random.nextDouble();
+    System.out.println(y);
+    
+    boolean z = random.nextBoolean();
+    System.out.println(z);
+  }
+}
