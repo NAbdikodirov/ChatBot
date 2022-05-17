@@ -1,0 +1,28 @@
+import java.util.Scanner;
+
+import javax.swing.JOptionPane;
+
+public class Main2 {
+    public static void main(String[] args) {
+        // Write a program that calculates the hypotenuse of a right triangle.
+
+        double x;
+        double y;
+        double z;
+
+        Scanner scan = new Scanner(System.in);
+
+        System.out.println("Enter side x: ");
+        x = scan.nextDouble();
+        System.out.println("Enter side y: ");
+        y = scan.nextDouble();
+        System.out.println("Enter side z: ");
+        z = scan.nextDouble();
+
+        double hypotenuse = Math.sqrt(Math.pow(x, 2) + Math.pow(y, 2) + Math.pow(z, 2));
+
+        System.out.println("The hypotenuse is: " + hypotenuse);
+
+        JOptionPane.showMessageDialog(null, "The hypotenuse is: " + hypotenuse);
+    }
+}
